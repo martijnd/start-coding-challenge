@@ -1,6 +1,6 @@
 {
   "name": "start-coding-challenge",
-  "version": "0.1.1",
+  "version": "0.1.7",
   "description": "Easily start a number of coding challenges.",
   "author": "Martijn Dorsman <martijndorsman@gmail.com>",
   "license": "MIT",
@@ -29,7 +29,8 @@
     "typecheck": "tsc",
     "build": "tsup src/index.ts --format esm --clean --sourcemap --minify --metafile",
     "dev": "tsup src/index.ts --format esm --watch --clean --onSuccess \"node dist/index.js\"",
-    "publish": "npm run build && npm publish"
+    "detype": "detype src/exercises/ts src/exercises/js",
+    "release": "npm run detype && npm run build && npm publish"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
