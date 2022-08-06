@@ -1,14 +1,25 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import inquirer from "inquirer";
+import { createProject } from "./helpers/createProject.js";
+import { logger } from "./utils/logger.js";
 
 const main = async () => {
   const { appName, language } = await runCli();
 
+  const projectDir = await createProject({appName, language});
+
+  logger.success(`Created project in ${projectDir}`);
+
   process.exit(0);
 };
 
-async function runCli() {
+export type Options = {
+  appName: string;
+  language: "javascript" | "typescript";
+};
+
+async function runCli(): Promise<Options> {
   const program = new Command().name("Start Coding Challenge");
   program
     .description(
@@ -31,7 +42,9 @@ async function runCli() {
     },
   });
 
-  const { language } = await inquirer.prompt<{ language: string }>({
+  const { language } = await inquirer.prompt<{
+    language: "typescript" | "javascript";
+  }>({
     name: "language",
     type: "list",
     message: "Will you be using JavaScript or TypeScript?",
