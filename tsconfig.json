@@ -29,7 +29,7 @@
     "allowSyntheticDefaultImports": true,
     // "emitDecoratorMetadata": true,
     // "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
