@@ -30,14 +30,16 @@
     "build": "tsup src/index.ts --format esm --clean --sourcemap --minify --metafile",
     "dev": "tsup src/index.ts --format esm --watch --clean --onSuccess \"node dist/index.js\"",
     "detype": "detype src/exercises/ts src/exercises/js",
-    "release": "npm run detype && npm run build && npm publish"
+    "release": "npm run detype && npm run build && npm publish",
+    "test": "vitest"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
     "@types/inquirer": "^9.0.0",
     "tsup": "^6.2.1",
     "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "vite": "^3.0.0",
+    "vitest": "^0.21.0"
   },
   "dependencies": {
     "chalk": "^5.0.1",
