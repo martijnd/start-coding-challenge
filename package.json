@@ -1,6 +1,6 @@
 {
   "name": "start-coding-challenge",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "Easily start a number of coding challenges.",
   "author": "Martijn Dorsman <martijndorsman@gmail.com>",
   "license": "MIT",
@@ -29,8 +29,7 @@
     "typecheck": "tsc",
     "build": "tsup src/index.ts --format esm --clean --sourcemap --minify --metafile",
     "dev": "tsup src/index.ts --format esm --watch --clean --onSuccess \"node dist/index.js\"",
-    "preview": "vite preview",
-    "test": "vitest"
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

@@ -58,8 +58,9 @@ export const scaffoldProject = async ({
   } else {
     // detype
     const inputDir = path.join(PKG_ROOT, 'src/exercises');
-    const outputDir = path.join(PKG_ROOT, `${appName}/src`)
-    exec(`detype ${inputDir} ${outputDir}`);
+    const outputDir = path.join(PKG_ROOT, `${appName}/src`);
+    console.log(`detype ${inputDir} ${outputDir}`);
+    exec(`npx detype ${inputDir} ${outputDir}`);
   }
 
   spinner.start();
