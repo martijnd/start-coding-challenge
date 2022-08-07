@@ -1,4 +1,4 @@
-export function sevenBoom<T extends any[]>(arr: T) {
+export function sevenBoom<T extends any[]>(arr: T): string {
   //
 }
 
