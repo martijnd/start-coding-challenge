@@ -18,3 +18,7 @@ While working on the challenges, you're able to run the built-in test runner to 
 Run `npm test` to run all tests in the project, or run `npm test <test-name>` to run a specific test.
 
 For example, while working on the `add` challenge, you can run `npm test add` to only tun the tests for that challenge. You'll know that your code is correct if the tests pass.
+
+## Contributing new coding challenges
+
+To contribute new challenges, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
