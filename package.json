@@ -1,6 +1,6 @@
 {
   "name": "start-coding-challenge",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Easily start a number of coding challenges.",
   "author": "Martijn Dorsman <martijndorsman@gmail.com>",
   "license": "MIT",
@@ -52,6 +52,7 @@
     "eslint-plugin-import": "^2.26.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "standard-version": "^9.5.0",
     "tsup": "^6.2.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
