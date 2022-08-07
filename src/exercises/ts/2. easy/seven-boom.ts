@@ -10,5 +10,4 @@ if (import.meta.vitest) {
     expect(sevenBoom([76, 55, 44, 32])).toBe("Boom!");
     expect(sevenBoom([35, 4, 9, 37])).toBe("Boom!");
   });
-  
 }
