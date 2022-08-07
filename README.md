@@ -2,15 +2,7 @@
 
 This project provides a collection of JavasScript or TypeScript challenges to test your knowledge.
 
-To start, you can run the following command:
-
-```
-$ npx start-coding-challenge
-```
-
-This command will provide you with a few questions to name your project folder, and whether you want to complete the challenges in JavaScript or TypeScript.
-
-When the setup is complete, follow the instructions inside the terminal to start coding.
+To start, you can run the following command: `npx start-coding-challenge` and follow the instructions.
 
 ## How to use
 
@@ -22,3 +14,5 @@ For example, while working on the `add` challenge, you can run `npm test add` to
 ## Contributing new coding challenges
 
 To contribute new challenges, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+
+_This repository's building configuration is heavily inspired from the [Create T3 App repo](https://github.com/t3-oss/create-t3-app)_
