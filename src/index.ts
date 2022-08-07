@@ -7,7 +7,7 @@ import { logger } from "./utils/logger.js";
 const main = async () => {
   const { appName, language } = await runCli();
 
-  const projectDir = await createProject({appName, language});
+  const projectDir = await createProject({ appName, language });
 
   logger.success(`Created project in ${projectDir}`);
   logger.info(`Now run the following commands: `);
@@ -17,10 +17,10 @@ const main = async () => {
   process.exit(0);
 };
 
-export type Options = {
+export interface Options {
   appName: string;
   language: "javascript" | "typescript";
-};
+}
 
 async function runCli(): Promise<Options> {
   const program = new Command().name("Start Coding Challenge");

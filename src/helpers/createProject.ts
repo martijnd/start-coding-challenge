@@ -1,6 +1,6 @@
-import { Options } from "@/index.js";
 import path from "path";
 import { scaffoldProject } from "@/helpers/scaffoldProject.js";
+import { Options } from "@/index.js";
 
 export const createProject = async ({ appName, language }: Options) => {
   const projectDir = path.resolve(process.cwd(), appName);

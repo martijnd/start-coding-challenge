@@ -1,11 +1,11 @@
 import path from "path";
+import { fileURLToPath } from "url";
 import chalk from "chalk";
 import fs from "fs-extra";
 import inquirer from "inquirer";
 import ora from "ora";
-import { execa } from "@/utils/execAsync.js";
-import { fileURLToPath } from "url";
 import { Options } from "@/index.js";
+import { execa } from "@/utils/execAsync.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const distPath = path.dirname(__filename);
