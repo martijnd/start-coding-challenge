@@ -10,6 +10,9 @@ const main = async () => {
   const projectDir = await createProject({appName, language});
 
   logger.success(`Created project in ${projectDir}`);
+  logger.info(`Now run the following commands: `);
+  logger.info(`$ cd ${projectDir}`);
+  logger.info(`$ npm test`);
 
   process.exit(0);
 };
